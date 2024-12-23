@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KWU SEGET</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 0.5rem;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background-image: url('https://your-image-link.com/background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            position: relative;
+        }
+
+        @keyframes slide-in {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .product {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 250px;
+        }
+
+        .product:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-details {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .product-details h2 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-details p {
+            color: #777;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .product-details button {
+            background-color: #25D366;
+            border: none;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .product-details button:hover {
+            background-color: #1da851;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #222;
+            color: #fff;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        .contact-button {
+            display: inline-block;
+            margin-top: 1rem;
+            background-color: #25D366;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .contact-button:hover {
+            background-color: #1da851;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Halim Store</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome</h1>
+    </section>
+
+    <section id="products" class="product-container">
+        <div class="product">
+            <img src="https://www.sasa.co.id/medias/page_medias/Screen_Shot_2021-07-19_at_16_32_53.png">
+            <div class="product-details">
+                <h2>PANGSIT</h2>
+                <p>Isi : 5 | 15.000</p>
+                <button onclick="location.href='https://wa.me/62895320004955?text=Halo%20saya%20tertarik%20dengan%20produk%20ini.'">Buy Now</button>
+            </div>
+        </div>
+    </section>
+    <section id="products" class="product-container">
+        <div class="product">
+            <img src="https://www.sasa.co.id/medias/page_medias/Screen_Shot_2021-07-19_at_16_32_53.png">
+            <div class="product-details">
+                <h2>PANGSIT</h2>
+                <p>Isi : 5 | 15.000</p>
+                <button onclick="location.href='https://wa.me/62895320004955?text=Halo%20saya%20tertarik%20dengan%20produk%20ini.'">Buy Now</button>
+            </div>
+        </div>
+    </section>
+    <section id="products" class="product-container">
+        <div class="product">
+            <img src="https://www.sasa.co.id/medias/page_medias/Screen_Shot_2021-07-19_at_16_32_53.png">
+            <div class="product-details">
+                <h2>PANGSIT</h2>
+                <p>Isi : 5 | 15.000</p>
+                <button onclick="location.href='https://wa.me/62895320004955?text=Halo%20saya%20tertarik%20dengan%20produk%20ini.'">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="text-align: center; padding: 2rem;">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us on WhatsApp!</p>
+        <a class="contact-button" href="https://wa.me/62895320004955?text=Halo%20saya%20tertarik%20untuk%20membeli." target="_blank">Contact Us on WhatsApp</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Halim Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
